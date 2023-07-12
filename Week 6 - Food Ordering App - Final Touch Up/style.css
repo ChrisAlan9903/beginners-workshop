@@ -10,8 +10,17 @@ body{
 .app-container{  
     width: 700px;
     height: 450px;
-    background-color: whitesmoke;
-    border: 1px solid orange;
+    /* background-color: rgb(255, 166, 0, 0.7); */
+    /* border: 1px solid orange; */
+
+    background-image: url('https://previews.123rf.com/images/aluna1/aluna11911/aluna1191100085/134805223-sushi-food-graphic-orange-color-seamless-pattern-background-sketch-illustration-vector.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-size: 200px 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
     padding:  10px;
     display: flex;
     gap: 10px;
@@ -19,44 +28,69 @@ body{
 
 /* ----- 3 big sections ----------------- */
 nav{
-    width: 20%;
+    width: 25%;
     height: 100%;
-    border: 2px solid lightgreen;
+    /* border: 2px solid lightgreen; */
+    box-shadow: 4px 4px 4px rgba(250, 163, 76, 0.5),
+    -4px -4px 4px rgba(250, 163, 76, 0.5);
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 main{
-    width: 50%;
+    width: 40%;
     height: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     
 }
 aside{
     width: 30%;
     height: 100%;
-    border: 2px solid darkorchid;
+    /* border: 2px solid darkorchid; */
     background-color: white;
+    box-shadow: 4px 4px 4px rgba(250, 163, 76, 0.5),
+    -4px -4px 4px rgba(250, 163, 76, 0.5);
+
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
 }
 
 /* ---- navbar --------------- */
 
 
 ul{
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;   
+    padding: 0 5px;
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+
 }
 
-li{
+li{ 
+
     list-style-type: none;
-    margin: 20px 0;
+    margin: 10px 0;
     height: 40px;
-    padding-left: 20px;
+    padding-left: 30px;
     display: flex;
     align-items: center;
-    border-radius: 10px
+    border-radius: 10px;
+    color: rgba(255, 165, 0, 0.7);
+    font-size: small;
+    font-weight: bold
 }
 
 li:hover{
     background-color: orange;
+    color: white;
 }
 
 
@@ -65,13 +99,41 @@ main{
     padding: 0 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.main-title{
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    background-color:orange;
+}
+
+#title{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#subtitle{
+    font-size: 15px;
+   margin-top: 5px;
+   margin-bottom: 10px;
 }
 
 
 .menu-container{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    background: white;
     flex: 1;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(250, 163, 76, 0.5),
+    -4px -4px 4px rgba(250, 163, 76, 0.5);
+  
+               
     margin-bottom: 5px;
+    padding: 10px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -80,7 +142,11 @@ main{
 }
 
 .menu-item{
-    border: 1px solid darkgoldenrod;
+    box-sizing: border-box;
+    /* border: 1px solid darkgoldenrod; */
+    box-shadow: 2px 2px 4px rgba(184, 134, 11, 0.2),
+    -2px -2px 4px rgba(184, 134, 11, 0.2);
+    border-radius: 5px;
     margin: 5px 10px ;
     height: 45%;
     width: 40%;
@@ -88,6 +154,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .menu-container::after{
@@ -102,9 +169,11 @@ main{
 
 .menu-item img{
     height: 63%;
+    
 }
 
 .info-wrapper{
+    box-sizing: border-box;
     /* border: 1px solid red; */
     margin-bottom: 5px;
     height: 30%;
@@ -124,8 +193,9 @@ main{
 
 .name-price{
     /* border: 1px solid purple; */
+    box-sizing: border-box;
     height: 100%;
-    margin: 0 10px;
+    margin: 0 5px;
     flex:1;
      
 }
@@ -133,10 +203,10 @@ main{
 .name-price h5{
     margin: 0;
     margin-top: 3px;
-    font-size: 11px;
+    font-size: x-small;
 }
 .name-price h4{
-    margin: 5px 0;
+    margin: 0
 }
 
 /* ------------ ASIDE SECTION---------------- */
@@ -144,7 +214,7 @@ main{
 aside{
     box-sizing: border-box;
 
-    padding: 5px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -154,7 +224,7 @@ aside{
 aside h4{
     margin: 0 ;
     margin-top: 10px;
-    background: lightgoldenrodyellow;
+    /* background: lightgoldenrodyellow; */
 }
 
 
@@ -162,6 +232,7 @@ aside h4{
 .cart-list{
     background: orange;
     flex:1;
+    border-radius: 5px;
 
     padding: 10px 5px;
     display: flex;
@@ -184,6 +255,7 @@ aside h4{
     background: white;
     width: 100%;
     height: 50px;
+    border-radius: 5px;
 
     padding: 5px;
     flex-shrink: 0;
@@ -225,6 +297,7 @@ aside h4{
 .cost{
     box-sizing: border-box;
     background: orange;
+    border-radius: 5px;
     width: 100%;
     height: 30%;
     padding: 5px;
@@ -238,6 +311,7 @@ aside h4{
     padding: 5px;
     background: white;
     flex: 1;
+    border-radius: 5px;
 
     display: flex;
     justify-content: space-between;
@@ -254,10 +328,30 @@ aside h4{
 }
 
 
+#Total{
+    font-weight: 600;
+    font-size: small;
+}
 
-/* .total  .cost-title, .total  .cost-value{
-    font-size: medium;
-} */
+button{
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid orange;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+}
+button:hover{
+    
+    border: 1px solid orange;
+    background-color: white;
+    color: orange;
+    /* border-radius: 5px; */
+}
+
+#checkout-btn{
+    border: 2px solid white;
+}
 
 
 
