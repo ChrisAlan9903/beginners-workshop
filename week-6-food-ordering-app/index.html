@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Food Ordering App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- navigation bar section-->
+      <nav>
+        <h1 id="app-name">makanpe</h1>
+        <ul>
+          <li>Dashboard</li>
+          <li>Food Order</li>
+          <li>Favourite</li>
+          <li>Message</li>
+          <li>Order History</li>
+        </ul>
+      </nav>
+
+      <!-- main section -->
+      <main>
+        <h3 class="main-title" id="title">Hello friend !</h3>
+
+        <!-- menu subsection -->
+        <h4 class="main-title" id="subtitle">Menu</h4>
+        
+        <div class="menu-container">
+          <div class="menu-item" id="1">
+            <img src="./assets/burger.jpg" alt="burger" />
+            <div class="info-wrapper">
+              <div class="name-price">
+                <h5>Burger</h5>
+                <h4>$4.50</h4>
+              </div>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="menu-item" id="2">
+            <img src="./assets/buritto.jpeg" alt="burger" />
+            <div class="info-wrapper">
+              <div class="name-price">
+                <h5>Buritto</h5>
+                <h4>$6.50</h4>
+              </div>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="menu-item" id="3">
+            <img src="./assets/fish-n-chip.jpg" alt="burger" />
+            <div class="info-wrapper">
+              <div class="name-price">
+                <h5>Fish n Chip</h5>
+                <h4>$8.50</h4>
+              </div>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="menu-item" id="4">
+            <img src="./assets/fried chicken.jpg" alt="burger" />
+            <div class="info-wrapper">
+              <div class="name-price">
+                <h5>Fried Chicken</h5>
+                <h4>$3.50</h4>
+              </div>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="menu-item" id="5">
+            <img src="./assets/hotdog.webp" alt="burger" />
+            <div class="info-wrapper">
+              <div class="name-price">
+                <h5>Hotdog</h5>
+                <h4>$5.50</h4>
+              </div>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="menu-item" id="6">
+            <img src="./assets/pizza.jpg" alt="burger" />
+            <div class="info-wrapper">
+              <div class="name-price">
+                <h5>Pizza</h5>
+                <h4>$9.50</h4>
+              </div>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="menu-item" id="7">
+            <img src="./assets/taco.jpg" alt="burger" />
+            <div class="info-wrapper">
+              <div class="name-price">
+                <h5>Taco</h5>
+                <h4>$7.50</h4>
+              </div>
+              <button>+</button>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <!-- aside section -->
+      <aside>
+        <h4>Your order</h4>
+        <div class="cart-list">
+
+          <div class="cart-item" id="item-1">
+
+            <img src="./assets/burger.jpg" alt="">
+
+            <div class="item-name">
+              <p>Burger</p>
+            </div>
+
+            <div class="item-price">
+              <p>+ $4.50</p>
+            </div>
+
+          </div>
+
+          <div class="cart-item" id="item-2">
+
+            <img src="./assets/fried chicken.jpg" alt="">
+            <div class="item-name">
+              <p>Fried Chicken</p>
+            </div>
+            <div class="item-price">
+              <p>+ $3.50</p>
+            </div>
+
+          </div>
+
+          <div class="cart-item" id="item-3">
+
+            <img src="./assets/hotdog.webp" alt="">
+            <div class="item-name">
+              <p>Hotdog</p>
+            </div>
+            <div class="item-price">
+              <p>+ $5.50</p>
+            </div>
+            
+          </div>
+         
+        </div>
+
+        <div class="cost">
+
+          <div class="pricing charges" id="price-1">
+            <div class="cost-title" >Service tax</div>
+            <div class="cost-value" > $10</div>
+          </div>
+
+          <div class="pricing charges" id="price-2">
+            <div class="cost-title" >GST</div>
+            <div class="cost-value" > $6</div>
+          </div>
+          
+          <div class="pricing total" id="price-total">
+            <div class="cost-title" id="Total">Total</div>
+            <div class="cost-value" > $26.50</div>
+          </div>
+
+          <button id="checkout-btn" >Checkout</button>
+        </div>
+
+      </aside>
+    </div>
+  </body>
+</html>
