@@ -78,6 +78,7 @@ li {
   color: rgba(255, 165, 0, 0.7);
   font-size: small;
   font-weight: bold;
+  transition: all 0.2s;
 }
 
 li:hover {
